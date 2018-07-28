@@ -22,12 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/ugg/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/viper/config/common_full_phone.mk)
+$(call inherit-product, vendor/viper/config/common.mk)
+
+# Build type
+VIPER_BUILD_TYPE=Final-N
 
 PRODUCT_DEVICE := ugg
-PRODUCT_NAME := lineage_ugg
+PRODUCT_NAME := viper_ugg
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Y1
+PRODUCT_MODEL := Redmi Note 5A Prime
 PRODUCT_MANUFACTURER := Xiaomi
 BOARD_VENDOR := Xiaomi
 
@@ -40,4 +44,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRIVATE_BUILD_DESC="ugg-user 7.1.2 N2G47H V9.5.8.0.NDKMIFA release-keys"
 
 # Unofficial build ID
-TARGET_UNOFFICIAL_BUILD_ID := Mbtt
+#TARGET_UNOFFICIAL_BUILD_ID := Mbtt

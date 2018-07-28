@@ -1,1 +1,1 @@
-add_lunch_combo lineage_ugg-userdebug
+add_lunch_combo viper_ugg-userdebug
