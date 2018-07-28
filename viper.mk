@@ -26,7 +26,7 @@ $(call inherit-product, vendor/viper/config/common_full_phone.mk)
 $(call inherit-product, vendor/viper/config/common.mk)
 
 # Build type
-VIPER_BUILD_TYPE=Final-N
+VIPER_BUILD_TYPE=OFFICIAL
 
 PRODUCT_DEVICE := ugg
 PRODUCT_NAME := viper_ugg
